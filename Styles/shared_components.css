@@ -20,18 +20,20 @@ a:hover{
 header {
    background-color: transparent;
    display: flex;
-   align-items: space-between;
-   justify-content: space-between;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
 }
 nav {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
+   width: 60%;
 }
 nav > ul {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: center;
    list-style: none;
    text-decoration: none;
    list-style-type: none;
