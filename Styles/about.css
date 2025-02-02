@@ -1,0 +1,32 @@
+.Logo {
+    width: 40%;
+    height: auto;
+}
+
+.Instruktörer_utbildning {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.Tränare_section {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tränare {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Tränare img, .Tränare h1 {
+    margin-bottom: 1em;
+}
+
