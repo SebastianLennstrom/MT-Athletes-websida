@@ -8,21 +8,24 @@ body {
     font-size: 17px;
     line-height: 1.7;
     color: whitesmoke;
+    margin: 0;
 }
 a{
     text-decoration: none;
-    color: whitesmoke;
+    color: black;
     font-weight: bold;
 }
 a:hover{
     color: #8a8c8d;
+    
 }
 header {
-   background-color: transparent;
+   background-color: whitesmoke;
    display: flex;
    align-items: center;
    justify-content: center;
    width: 100%;
+   height: 12vh;
 }
 nav {
    display: flex;
@@ -37,7 +40,14 @@ nav > ul {
    list-style: none;
    text-decoration: none;
    list-style-type: none;
+   width: 100%;
    
+}
+
+#List_item--main{
+      font-size: 130%;
+      font-weight: bold;
+     
 }
 nav > ul > li {
    margin: 0 50px;
@@ -49,6 +59,7 @@ main {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   padding-top: 5vh;
 }
 main > * {
    display: flex;
@@ -56,5 +67,6 @@ main > * {
    align-items: center;
    justify-content: center;
    width: 40%;
+   margin-bottom: 10vh;
 
 }

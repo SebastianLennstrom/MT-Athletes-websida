@@ -26,6 +26,11 @@
     justify-content: center;
 }
 
+.Tränare img {
+    width: 20%;
+    height: auto;
+}
+
 .Tränare img, .Tränare h1 {
     margin-bottom: 1em;
 }

@@ -1,35 +1,44 @@
-.Logo  {
+.Logo {
     width: 40%;
     height: auto;
- }
- 
+    animation: fadeIn 0.5s ease-in-out;
+}
 
- .Button_group{
-     width: 70%;
-     display: flex;
-     flex-direction: row;
-     align-items: center;
-     justify-content: center;
-     margin: 10px;
- }
- .Button_group > *{
-     margin: 0 2em;
-     background-color: #3e7d98;
-     font-size: medium;
-     color: whitesmoke;
-     font-weight: bold;
-     width: 30%;
-     height: 2.5em;
-     border-radius: 20px;
-     border: none;
-     transition: ease-in-out 0.05s;
- 
- }
- .Button_group > *:hover{
-     background-color: #2e6d88;
-     cursor: pointer;
-     transform: scale(1.01);
- }
- 
- 
- 
+.Button_group {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.Button_group > * {
+    margin: 0 2em;
+    background-color: #3e7d98;
+    font-size: medium;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 30%;
+    height: 2.5em;
+    border-radius: 20px;
+    border: none;
+    transition: ease-in-out 0.05s;
+}
+
+.Button_group > *:hover {
+    background-color: #2e6d88;
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
