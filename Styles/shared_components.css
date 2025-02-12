@@ -1,3 +1,7 @@
+ul {
+    list-style-type: none;
+
+}
 body {
     display: flex;
     flex-direction: column;
@@ -60,6 +64,7 @@ main {
    align-items: center;
    justify-content: center;
    padding-top: 5vh;
+   width: 100%;
 }
 main > * {
    display: flex;

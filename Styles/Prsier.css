@@ -1,0 +1,80 @@
+.Priser {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Priser_content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    flex-wrap: wrap; 
+}
+
+.Priser_content > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px; 
+    height: 300px; 
+    margin: 0 2em;
+    padding: 1em;
+    box-sizing: border-box;
+}
+
+.Priser_content > div h1 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.Priser_content > div ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.Images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Logo {
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+
+}
+.Logo > img {
+    width: 40%;
+    height: auto;
+}
+.tränare{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.tränare > div {
+  margin: 0% 1vw;
+
+}
