@@ -84,13 +84,28 @@ header {
    justify-content: center;
    flex-direction: row;
 }
-
+.socials_container{
+   display: flex;
+   width: 33%;
+   height: auto;   
+   justify-content: center;
+}
+.socials_container > a{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 #socials_icon--facebook{
    width: 35%;
    height: auto;
+
 }
 #socials_icons--insta{
    width: 60%;
+   height: auto;
+}
+#socials_icons--mail{
+   width: 35%;
    height: auto;
 }
 
