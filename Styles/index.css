@@ -21,13 +21,13 @@
     height: auto;
     flex-wrap: wrap; 
 }
-.Reviews_content > div{
+.Reviews_content--item{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 200px; 
-    height: 300px; 
+    width: 300px; 
+    height: 400px; 
     margin: 0 1em;
     padding: 1em;
     box-sizing: border-box;
