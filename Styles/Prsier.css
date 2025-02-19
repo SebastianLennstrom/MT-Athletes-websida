@@ -78,3 +78,64 @@
   margin: 0% 1vw;
 
 }
+
+@media screen and (max-width: 768px) {
+    .Priser_content {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Priser_content > div {
+        width: 80%;
+        margin: 1em 0;
+    }
+
+    .Images {
+        width: 80%;
+        
+    }
+
+    .Logo > img {
+        width: 60%;
+    }
+
+    .tränare {
+        flex-direction: column;
+    }
+
+    .tränare_image {
+        display: flex;
+        width: 80%;
+        margin: 1em 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Priser_content {
+        width: 100%;
+    }
+
+    .Priser_content > div {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+    .Images {
+        width: 100%;
+    }
+
+    .Logo > img {
+        width: 80%;
+    }
+
+    .tränare_image {
+        display: flex;
+        width: 100%;
+        margin: 1em 0;
+        align-items: center;
+        justify-content: center;
+    }
+}

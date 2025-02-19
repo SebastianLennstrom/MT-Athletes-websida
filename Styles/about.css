@@ -39,3 +39,42 @@
 .Utbildning_list{
     list-style-type: circle;
 }
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 80%;
+    }
+    .Logo {
+        width: 60%;
+    }
+
+    .Tränare img {
+        width: 40%;
+    }
+
+    .Instruktörer_utbildning {
+        width: 90%;
+    }
+
+    section {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    section {
+        width: 80%;
+    }
+    .Logo {
+        width: 80%;
+    }
+
+    .Tränare img {
+        width: 60%;
+    }
+
+    .Instruktörer_utbildning {
+        width: 100%;
+    }
+
+}

@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 60vh;
+    height: fit-content;
 
 }
 .Reviews_content{
@@ -37,7 +37,57 @@
     color: black;
 }
 
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+    section {
+        width: 100%;
+    }
+    section > h2 {
+        font-size: 1.3em;
+        width: 80%;
 
+    }
+    section > img{
+        width: 80%;
+        height: auto;
+    }
+    .Logo {
+        width: 60%;
+    }
+
+    .Reviews_content {
+        width: 80%;
+        flex-direction: column;
+    }
+
+    .Reviews_content--item {
+        width: 100%;
+        margin: 1em 0;
+        height: 20vh;
+    }
+    .about{
+        width: 80%;
+    }
+   
+
+
+}
+
+@media screen and (max-width: 480px) {
+    .Logo {
+        width: 80%;
+    }
+
+    .Reviews_content {
+        width: 90%;
+    }
+
+    .Reviews_content--item {
+        width: 100%;
+        margin: 1em 0;
+    }
+
+}
 
 
 

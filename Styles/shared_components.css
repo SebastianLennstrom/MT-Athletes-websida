@@ -57,6 +57,8 @@ header {
     width: 30%;
     height: auto;
 }
+
+
 .Page_intro--Logo > img {
     width: 30%;
     height: auto;
@@ -167,4 +169,23 @@ main > * {
    margin-top: 5vh;
    margin-bottom: 10vh;
 
+}
+
+@media screen and (max-width: 768px) {
+   .Page_intro--content{
+       width: 100%;
+       margin-left: 0;
+   }
+   .Page_intro--Logo{
+       display: none;
+   }
+   .Page_intro--location > a{
+        width: 40%;
+   }    
+  .Page_intro--location > img{
+        width: 30%;
+   }    
+
+
+  
 }
