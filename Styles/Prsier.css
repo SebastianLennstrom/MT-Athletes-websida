@@ -91,6 +91,9 @@
         margin: 1em 0;
     }
 
+   li{
+        font-size: 1.2em;
+    }
     .Images {
         width: 80%;
         
