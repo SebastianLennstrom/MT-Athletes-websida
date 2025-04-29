@@ -1,4 +1,4 @@
-const emailTo = "mtathletes@outlook.com"; // Replace with the desired email address
+const emailTo = "mtathletes@outlook.com"; 
 
 document.getElementById("socials_icons--mail").addEventListener("click", function(e) {
     e.preventDefault();
