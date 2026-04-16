@@ -6,6 +6,7 @@
     <title>MT ATHLETES-Teamet bakom atleten</title>
     <link rel="stylesheet" href="Styles/shared_components.css">
     <link rel="stylesheet" href="Styles/index.css">
+    <link rel="stylesheet" href="Styles/carousel.css">
     <link rel="icon" href="Images/Logga.png" type="image/png">
 <body>
     <header class="Page_header">
@@ -40,6 +41,10 @@
                 <img class="Logo" src="Images/Logga.png" alt="Logga Mt-Athletes">
                 <h1>MT Athletes</h1>
                 <h2>Vi finns för att hjälpa dig att uppnå dina mål. Vi kan hjälpa dig med personlig träning, Thaiboxning, styrketräning, självförsvar, seminarium, och mycket mer inom MuayThai</h2>
+            </section>
+
+            <section class="carousel-section">
+                <div id="carousel"></div>
             </section>
 
                 <section class="Reviews">
@@ -90,6 +95,29 @@
 </body>
 
 
-<script src="Javascript/sharedfunctions.js"></script> </head>
+<script src="Javascript/sharedfunctions.js"></script>
+<script src="Javascript/carousel.js"></script>
+<script>
+    const carousel = new ImageCarousel({
+        containerId: 'carousel',
+        images: [
+            'Images/carousel/image1.png',
+            'Images/carousel/image2.png',
+            'Images/carousel/image3.png',
+            'Images/carousel/image4.png',
+            'Images/carousel/image5.png',
+            'Images/carousel/image6.png',
+            'Images/carousel/image7.png',
+            'Images/carousel/image8.png',
+            'Images/carousel/image9.png'
+        ],
+        autoPlay: true,
+        autoPlayInterval: 5000,
+        showThumbnails: true,
+        showControls: true
+    });
+    carousel.init();
+</script>
+</head>
 
 </html>
