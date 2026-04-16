@@ -1,23 +1,39 @@
 .Logo {
-    width: 40%;
-    height: auto;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 1.5rem;
+    filter: drop-shadow(0 0 15px rgba(255, 193, 7, 0.4));
+    animation: fadeInScale 0.8s ease-out;
 }
 
 .Instruktörer_utbildning {
     display: flex;
-    margin-top: 5vh;
+    margin-top: 2rem;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.12) 0%, rgba(255, 193, 7, 0.05) 100%);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    padding: 2.5rem;
+    border-radius: 15px;
+}
+
+.Instruktörer_utbildning h2 {
+    color: #ffc107;
+    font-size: 1.8em;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 0 15px rgba(255, 193, 7, 0.3);
 }
 
 .Tränare_section {
-    margin-top: 4em;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2.5rem;
 }
 
 .Tränare {
@@ -25,56 +41,154 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.12) 0%, rgba(255, 193, 7, 0.05) 100%);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    padding: 2rem;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+}
+
+.Tränare:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255, 193, 7, 0.6);
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.18) 0%, rgba(255, 193, 7, 0.08) 100%);
+    box-shadow: 0 10px 30px rgba(255, 193, 7, 0.15);
 }
 
 .Tränare img {
-    width: 20%;
-    height: auto;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 1.5rem;
+    border: 2px solid rgba(255, 193, 7, 0.4);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.Tränare img, .Tränare h1 {
-    margin-bottom: 1em;
+.Tränare:hover img {
+    border-color: rgba(255, 193, 7, 0.7);
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(255, 193, 7, 0.2);
 }
 
-.Utbildning_list{
-    list-style-type: circle;
+.Tränare h1 {
+    color: #ffc107;
+    font-size: 1.6em;
+    margin-bottom: 1.5rem;
+}
+
+.Tränare_text {
+    max-width: 800px;
+}
+
+.Tränare_text p {
+    color: #d0d0d0;
+    font-size: 1.05em;
+    line-height: 1.8;
+    text-align: center;
+}
+
+.Utbildning_list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.Utbildning_list li {
+    color: #c0c0c0;
+    margin: 0.8rem 0;
+    padding: 0.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.Utbildning_list li:before {
+    content: "✓ ";
+    color: #ffc107;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.Utbildning_list li:hover {
+    color: #e0e0e0;
+    padding-left: 1rem;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 @media screen and (max-width: 768px) {
     section {
-        width: 80%;
+        width: 95%;
+        padding: 1.5rem;
     }
+
     .Logo {
-        width: 60%;
+        width: 100px;
+        height: 100px;
+    }
+
+    .Tränare {
+        width: 95%;
+        padding: 1.5rem;
     }
 
     .Tränare img {
-        width: 40%;
+        width: 150px;
+        height: 150px;
     }
 
     .Instruktörer_utbildning {
-        width: 90%;
+        width: 95%;
+        padding: 1.5rem;
     }
 
-    section {
-        width: 80%;
+    .Utbildning_list li {
+        font-size: 0.95em;
     }
 }
 
 @media screen and (max-width: 480px) {
     section {
-        width: 80%;
+        width: 100%;
     }
+
     .Logo {
-        width: 80%;
+        width: 80px;
+        height: 80px;
+    }
+
+    .Tränare {
+        width: 100%;
+        padding: 1rem;
     }
 
     .Tränare img {
-        width: 60%;
+        width: 120px;
+        height: 120px;
+    }
+
+    .Tränare h1 {
+        font-size: 1.3em;
     }
 
     .Instruktörer_utbildning {
         width: 100%;
+        padding: 1rem;
     }
 
+    .Utbildning_list li {
+        font-size: 0.9em;
+    }
 }

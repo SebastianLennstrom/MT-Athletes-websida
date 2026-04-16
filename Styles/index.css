@@ -1,103 +1,243 @@
 .Logo {
-    width: 40%;
-    height: auto;
-    animation: fadeIn 0.5s ease-in-out;
+    width: 120px;
+    height: 120px;
+    animation: fadeInScale 0.8s ease-in-out;
+    filter: drop-shadow(0 0 15px rgba(255, 193, 7, 0.4));
+    margin-bottom: 1.5rem;
 }
 
-.Reviews{
+section:first-of-type {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.15) 0%, rgba(255, 193, 7, 0.05) 100%);
+    border: 2px solid rgba(255, 193, 7, 0.3);
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+section:first-of-type h1 {
+    font-size: 3em;
+    margin-bottom: 1.5rem;
+    animation: slideDown 0.8s ease-out;
+}
+
+section:first-of-type h2 {
+    font-size: 1.3em;
+    color: #c0c0c0;
+    max-width: 800px;
+    line-height: 1.8;
+    animation: fadeIn 1s ease-out 0.3s both;
+}
+
+.Reviews {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: fit-content;
-
+    flex-direction: column;
+    gap: 2rem;
 }
-.Reviews_content{
+
+.Reviews > div:first-child {
+    text-align: center;
+}
+
+.Reviews > div:first-child h1 {
+    font-size: 2em;
+    margin-bottom: 1.5rem;
+}
+
+.Reviews_content {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 60%;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
     height: auto;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    gap: 2rem;
 }
-.Reviews_content--item{
+
+.Reviews_content--item {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 300px; 
-    min-height: 350px;
-    max-height: max-content; 
-    margin: 0 1em 1em 0;
-    padding: 1em;
+    width: 280px;
+    min-height: 320px;
+    padding: 2rem;
     box-sizing: border-box;
-    background-color: whitesmoke;
-    border: solid whitesmoke;
-    border-radius: 10px;
-    color: black;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
-    
-    
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.12) 0%, rgba(255, 193, 7, 0.05) 100%);
+    border: 1px solid rgba(255, 193, 7, 0.3);
+    border-radius: 15px;
+    color: #e0e0e0;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 193, 7, 0.2);
+    transition: all 0.4s ease;
+    cursor: pointer;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.Reviews_content--item:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 193, 7, 0.6);
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.2) 0%, rgba(255, 193, 7, 0.1) 100%);
+    box-shadow: 0 15px 40px rgba(255, 193, 7, 0.2), inset 0 1px 0 rgba(255, 193, 7, 0.3);
+}
+
+.Reviews_content--item h1 {
+    color: #ffc107;
+    font-size: 1.3em;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.item_text {
+    color: #c0c0c0;
+    font-size: 1em;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.about {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 193, 7, 0.2);
+    padding: 3rem;
+    text-align: center;
+    max-width: 900px;
+}
+
+.about p {
+    font-size: 1.15em;
+    line-height: 1.9;
+    color: #d0d0d0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Media Queries for responsiveness */
 @media screen and (max-width: 768px) {
     section {
         width: 100%;
+        padding: 1.5rem;
     }
-    section > h2 {
-        font-size: 1.3em;
-        width: 80%;
 
+    section:first-of-type {
+        padding: 2rem 1rem;
     }
-    section > img{
+
+    section:first-of-type h1 {
+        font-size: 2em;
+    }
+
+    section:first-of-type h2 {
+        font-size: 1.1em;
+        width: 95%;
+    }
+
+    section > img {
         width: 80%;
         height: auto;
     }
+
     .Logo {
-        width: 60%;
+        width: 100px;
+        height: 100px;
     }
 
     .Reviews_content {
-        width: 80%;
+        width: 100%;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .Reviews_content--item {
+        width: 100%;
+        min-height: 250px;
+        padding: 1.5rem;
+    }
+
+    .about {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    section:first-of-type h1 {
+        font-size: 1.6em;
+    }
+
+    section:first-of-type h2 {
+        font-size: 1em;
+    }
+
+    .Reviews_content {
+        width: 100%;
         flex-direction: column;
     }
 
     .Reviews_content--item {
         width: 100%;
-        margin: 1em 0;
-        height: 20vh;
-    }
-    .about{
-        width: 80%;
-    }
-   
-
-
-}
-
-@media screen and (max-width: 480px) {
-    .Logo {
-        width: 80%;
+        margin: 0;
+        min-height: auto;
     }
 
-    .Reviews_content {
-        width: 90%;
-    }
-
-    .Reviews_content--item {
+    .about {
         width: 100%;
-        margin: 1em 0;
     }
 
+    .about p {
+        font-size: 0.95em;
+    }
 }
-
-
-
-
-@keyframes fadeIn {
-    from {
         opacity: 0;
         transform: translateY(70px);
     }
