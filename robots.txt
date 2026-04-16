@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Allow: /Views/
+Allow: /Images/
+Allow: /Styles/
+Allow: /Javascript/
+
+Disallow: /admin/
+Disallow: /*.php$
+
+Sitemap: https://mtathletessweden.com/sitemap.xml
+
+User-agent: Googlebot
+Allow: /
+Priority: 1.0
+
+User-agent: Bingbot
+Allow: /
+Priority: 0.9
+
+Crawl-delay: 1
